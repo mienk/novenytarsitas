@@ -9,18 +9,12 @@
 <body>
     <div id="matrix"></div>
     <script type="module">
-        import PlantsAssociation from './PlantsAssociation.js'
+        import Main from './src/Main.js'
         window.onload = () => {
-            let plantsAssociation = new PlantsAssociation()
-            let plants = plantsAssociation.getPlants()
-            let matrix = document.getElementById("matrix")
-            plants.forEach(
-                (plant) => {
-                    matrix.innerHTML += plant + "<br/>"
-                }
-            )
+            new Main()
         }
     </script>
+    <canvas></canvas>
 </body>
 
 </html>
