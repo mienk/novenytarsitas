@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="matrix"></div>
+    <script type="module">
+        import PlantsAssociation from './PlantsAssociation.js'
+        window.onload = () => {
+            let plantsAssociation = new PlantsAssociation()
+            let plants = plantsAssociation.getPlants()
+            let matrix = document.getElementById("matrix")
+            plants.forEach(
+                (plant) => {
+                    matrix.innerHTML += plant + "<br/>"
+                }
+            )
+        }
+    </script>
+</body>
+
+</html>
