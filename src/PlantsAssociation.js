@@ -8,10 +8,25 @@ export default class PlantsAssociation {
         "tojásgyümölcs":
             "zzxzpfzzffffzzzzfzppfzffffzfzfpfffzfpz",
         "földicseresznye":
-            "zzzxpfzzffffzzzzfzppfzffffzfzfpfffzfpz"
+            "zzzxpfzzffffzzzzfzppfzffffzfzfpfffzfpz",
+        "burgonya":
+            "ppppxpffpffppfzzpzfppzzzzzzfzfpppzzffz",
+        "cékla":
+            "pfffpxpffffzzfzzfzfzfzfzzzzfpffffzzfzz",
+        "sárgarépa":
+            "zzzzfpxzfzzpzzzzzzfzfzzfzfzffzffpfzfff",
+        "petrezselyem":
+            "zfzzffzxfzzpzfpfpffffpffffpfffffffffff",
+        "paszternák":
+            "zfffpfffxzzpzffzfffffffffffffffffpffff"
     }
 
-    getPlantsMatrixLength = () => this.#plantsMatrix.paradicsom.length
+    #colors = {
+        "x": "black", "f": "white", "p": "red", "z": "green"
+    }
+
+    getPlantsMatrixLength = () => Object.keys(this.#plantsMatrix).length
     getPlants = () => Object.keys(this.#plantsMatrix)
-    getRow = (plantName) => this.plantsMatrix[plantName]
+    getRow = (plantName) => this.#plantsMatrix[plantName]
+    getColor = (i) => this.#colors[i]
 }
