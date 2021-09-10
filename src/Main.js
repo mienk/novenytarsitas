@@ -39,10 +39,8 @@ export default class Main {
             context.lineTo(x, y + edge)
             context.lineTo(x, y)
             //context.stroke()
-            context.closePath()
-            
+            context.closePath()  
             context.fillStyle = color
-         
             context.fill()
             context.stroke()
             context.fillStyle = "black"
