@@ -5,18 +5,8 @@ export default class Main {
     constructor() {
         this.plantsAssociation = new PlantsAssociation()
         this.plants = this.plantsAssociation.getPlants()
-        //this.view()
         this.draw()
     }
-
-    // view = () => {
-    //     let matrix = document.getElementById("matrix")
-    //     this.plants.forEach(
-    //         (plant) => {
-    //             matrix.innerHTML += plant + "<br/>"
-    //         }
-    //     )
-    // }
 
     draw = () => {
         let edge = 22
