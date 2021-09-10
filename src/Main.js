@@ -23,7 +23,6 @@ export default class Main {
         let matrixDraw = document.getElementsByTagName("canvas")[0]
         window.context = matrixDraw.getContext("2d")
         context.strokeStyle = "black"
-        context.strokeWidth = 1
         matrixDraw.width = this.plantsAssociation.getPlantsMatrixLength() * 10 + 910
         matrixDraw.height = this.plantsAssociation.getPlantsMatrixLength() * 22 + 20
         context.fillStyle = "#f0f0f0"
@@ -32,17 +31,9 @@ export default class Main {
         context.fillStyle = 'black'
 
         let square = (x, y, color) => {
-            context.beginPath()
-            context.moveTo(x, y)
-            context.lineTo(x + edge, y)
-            context.lineTo(x + edge, y + edge)
-            context.lineTo(x, y + edge)
-            context.lineTo(x, y)
-            //context.stroke()
-            context.closePath()  
+            context.strokeRect(x, y, edge, edge)
             context.fillStyle = color
-            context.fill()
-            context.stroke()
+            context.fillRect(x, y, edge, edge)
             context.fillStyle = "black"
         }
 
@@ -50,10 +41,9 @@ export default class Main {
         let y = 10
         this.plants.forEach(
             (plant) => {
-                context.fillText(plant, 10, y + 20)
+                context.fillText(plant, 10, y + 17)
                 this.plantsAssociation.getRow(plant).split('').forEach(
                     (colorSign) => {
-                        console.log(colorSign)
                         square(x, y, this.plantsAssociation.getColor(colorSign))
                         x += 22
                     }
