@@ -18,7 +18,23 @@ export default class PlantsAssociation {
         "petrezselyem":
             "zfzzffzxfzzpzfpfpffffpffffpfffffffffff",
         "paszternák":
-            "zfffpfffxzzpzffzfffffffffffffffffpffff"
+            "zfffpfffxzzpzffzfffffffffffffffffpffff",
+        "retek":
+            "zfffffzzzxpzpfzzzzfpfpffpfzfzzffffzfff",
+        "tarlórépa":
+            "zfffffzzzpxzppzzzzfpfpffpfzfzzffffzfff",
+        "zeller":
+            "zfffpzpppzzxzzzzzzfzfzfzfzpzzfffpfffzf",
+        "hagyma":
+            "zzzzpzzzzppzxfppppfzzpfffpzffzpfffzzzf",
+        "fokhagyma":
+            "fzzzffzfffpzfxppppfzfpfffffzfzpfffffff",
+        "bab":
+            "fzzzzzzpfzzzppxfpfzzzzzzzzzzzzpzzfzzpf",
+        "lóbab":
+            "fzzzzzzfzzzzppfxpfzzzzzzzzpzzzpzzfzzff",
+        "borsó":
+            "pfffpfzpfzzzppppxfzzzzfffzzfzzpzzzzzpf"
     }
 
     #colors = {
