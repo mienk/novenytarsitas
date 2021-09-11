@@ -14,7 +14,7 @@ export default class Main {
         window.context = matrixDraw.getContext("2d")
         context.strokeStyle = "black"
         matrixDraw.width = this.plantsAssociation.getPlantsMatrixLength() * 10 + 858
-        matrixDraw.height = this.plantsAssociation.getPlantsMatrixLength() * 22 + 20
+        matrixDraw.height = this.plantsAssociation.getPlantsMatrixLength() * 22 + 20 + 150
         context.fillStyle = "#f0f0f0"
         context.fillRect(0, 0, matrixDraw.width, matrixDraw.height)
         context.font = '16px Arial'
@@ -28,10 +28,13 @@ export default class Main {
         }
 
         let x = 150
-        let y = 10
+        let y = 150 + 10
         this.plants.forEach(
             (plant) => {
                 context.fillText(plant, 10, y + 17)
+                context.rotate(-Math.PI/2)
+                context.fillText(plant, 0 - 150, y + 7)
+                context.rotate(Math.PI/2)
                 this.plantsAssociation.getRow(plant).split('').forEach(
                     (colorSign) => {
                         square(x, y, this.plantsAssociation.getColor(colorSign))
