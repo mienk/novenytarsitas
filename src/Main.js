@@ -26,7 +26,7 @@ export default class Main {
             context.fillRect(x, y, edge, edge)
             context.fillStyle = "black"
         }
-        let textArea = 130
+        let textArea = 150
         let x = textArea
         let y = textArea
         let textMargin = 10

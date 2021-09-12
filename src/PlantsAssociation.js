@@ -54,7 +54,29 @@ export default class PlantsAssociation {
         "karalábé":
             "fpffzzfffffzpfzzzzfffppppxzpzzzffzzzpz",
         "saláta":
-            "zfzzzzzpfzzpzfzpzzfzzzzzzzxffzzzpzzfzf"
+            "zfzzzzzpfzzpzfzpzzfzzzzzzzxffzzzpzzfzf",
+        "ázsiai saláta":
+            "fffffffffffzfzzzfffffpppppfxfzzzfzzzff",
+        "spenót":
+            "zzzzzpfffzzzffzzzzfffzzzzzffxfzzzfzfff",
+        "mángold":
+            "ffffffzffzzfzzzzzffffzzzzzzzfxzzffzfff",
+        "földimogyoró":
+            "pppppfffffffppppppzzzzzzzzzzzzxpzfzzff",
+        "földimandula":
+            "ffffpfffffffffzzzzzzzfffffzzzzpxffzzfz",
+        "kukorica":
+            "ffffpfpffffpffzzzzzzzfffffpfzfzfxzzfff",
+        "kapor":
+            "pfffzzffpfffffffzffzfzzzzzzzffffzxffpp",
+        "bazsalikom":
+            "zzzzzzzffzzfzfzzzzzzzzzzzzzzzzzzzfxfff",
+        "borsikafű":
+            "ffffffffffffzfzzzzfzfzzzzzfzffzzfffxff",
+        "édeskömény":
+            "ppppfzfffffzzfpfpffzfpfffpzffffffpffxp",
+        "koriander":
+            "ffzzzzfffffffffffffzfzzzzzfffffzfpffpx"
     }
 
     #colors = {
