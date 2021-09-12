@@ -34,7 +34,27 @@ export default class PlantsAssociation {
         "lóbab":
             "fzzzzzzfzzzzppfxpfzzzzzzzzpzzzpzzfzzff",
         "borsó":
-            "pfffpfzpfzzzppppxfzzzzfffzzfzzpzzzzzpf"
+            "pfffpfzpfzzzppppxfzzzzfffzzfzzpzzzzzpf",
+        "szója":
+            "ffzzzzzffzzzppfffxzzzzzzzzzfzfpzzfzzff",
+        "dinnye":
+            "pppppfffffffffzzzzxppfffffffffzzzfzfff",
+        "uborka":
+            "pfpppzzffppzzzzzzzpxpzzzzfzfffzzzzzzzz",
+        "tök":
+            "ffffpfffffffzfzzzzppxfffffzfffzzzfzfff",
+        "káposzták":
+            "zfzzzzzpfppzppzzzzfzfxppppzpzzzffzzzpz",
+        "brokkoli":
+            "zfffzfzfffffffzzfzfzfpxpppzpzzzffzzzfz",
+        "karfiol":
+            "ffffzzfffffzffzzfzfzfppxppzpzzzffzzzfz",
+        "leveles kel":
+            "zfffzzzffppfffzzfzfzfpppxpzpzzzffzzzfz",
+        "karalábé":
+            "fpffzzfffffzpfzzzzfffppppxzpzzzffzzzpz",
+        "saláta":
+            "zfzzzzzpfzzpzfzpzzfzzzzzzzxffzzzpzzfzf"
     }
 
     #colors = {

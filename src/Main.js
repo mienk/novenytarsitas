@@ -26,23 +26,25 @@ export default class Main {
             context.fillRect(x, y, edge, edge)
             context.fillStyle = "black"
         }
-
-        let x = 150
-        let y = 150 + 10
+        let textArea = 130
+        let x = textArea
+        let y = textArea
+        let textMargin = 10
+        let lineSpacing = 22
         this.plants.forEach(
             (plant) => {
-                context.fillText(plant, 10, y + 17)
+                context.fillText(plant, textMargin, y + 17)
                 context.rotate(-Math.PI/2)
-                context.fillText(plant, 0 - 150, y + 7)
+                context.fillText(plant, textMargin - textArea, y + 15)
                 context.rotate(Math.PI/2)
                 this.plantsAssociation.getRow(plant).split('').forEach(
                     (colorSign) => {
                         square(x, y, this.plantsAssociation.getColor(colorSign))
-                        x += 22
+                        x += lineSpacing
                     }
                 )
-                x = 150
-                y += 22
+                x = textArea
+                y += lineSpacing
             }
         )
     }
