@@ -9,12 +9,18 @@ export default class Main {
     }
 
     draw = () => {
-        let edge = 22
+        let textArea = 130
+        let x = textArea
+        let y = textArea
+        let textMargin = 10
+        let lineSpacing = 22
+        let edge = lineSpacing
+
         let matrixDraw = document.getElementsByTagName("canvas")[0]
         window.context = matrixDraw.getContext("2d")
         context.strokeStyle = "black"
-        matrixDraw.width = this.plantsAssociation.getPlantsMatrixLength() * 10 + 858
-        matrixDraw.height = this.plantsAssociation.getPlantsMatrixLength() * 22 + 20 + 150
+        matrixDraw.width = textArea + textMargin + this.plantsAssociation.getPlantsMatrixLength() * lineSpacing
+        matrixDraw.height = matrixDraw.width
         context.fillStyle = "#f0f0f0"
         context.fillRect(0, 0, matrixDraw.width, matrixDraw.height)
         context.font = '16px Arial'
@@ -26,11 +32,7 @@ export default class Main {
             context.fillRect(x, y, edge, edge)
             context.fillStyle = "black"
         }
-        let textArea = 150
-        let x = textArea
-        let y = textArea
-        let textMargin = 10
-        let lineSpacing = 22
+
         this.plants.forEach(
             (plant) => {
                 context.fillText(plant, textMargin, y + 17)
