@@ -1,2 +1,2 @@
 # garden
-kert.netlify.app
+https://kert.netlify.app
