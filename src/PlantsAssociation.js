@@ -80,7 +80,7 @@ export default class PlantsAssociation {
     }
 
     #colors = {
-        "x": "maroon", "f": "white", "p": "red", "z": "green"
+        "x": "maroon", "f": "white", "p": "red", "z": "green", "g": "gray"
     }
 
     getPlantsMatrixLength = () => Object.keys(this.#plantsMatrix).length
