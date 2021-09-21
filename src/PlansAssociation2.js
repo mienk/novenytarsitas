@@ -334,6 +334,14 @@ export default class PlantsAssociation2 {
             JÓ_SZOMSZÉD: ["paprika", "bazsalikom"]
         }
     }
+/*
+Megjegyzések:
+CUKKINI: A cukkíni lehet másodvetés is, de semmiképpen se vessük: retek, saláta és dughagyma után!
+FEJES SALÁTA: Vetésforgóban használható, de ne kerüljön gyökérzöldégek helyére!!
+PATISZON: Másodvetésre is használható, a legjobb a saláta, dughagyma vagy retek után!!
+UBORKA: Másodvetésben is használható, retek, burgonya és saláta ágyások után a legkiválóbb!!
+TÖK: Másodvetésre is használható retek, dughagyma és saláta után!!
+*/
 
     #colors = {
         "x": "maroon", "f": "white", "p": "red", "z": "green", "g": "gray"
