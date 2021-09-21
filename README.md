@@ -1,5 +1,5 @@
 # Plant association
 
-#növénytársítás
+# növénytársítás
 
 https://novenytarsitas.netlify.app/
