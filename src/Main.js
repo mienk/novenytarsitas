@@ -1,4 +1,4 @@
-import PlantsAssociation from './PlantsAssociation.js'
+import PlantsAssociation from '/src/PlantsAssociation.js'
 
 export default class Main {
 
@@ -37,7 +37,7 @@ export default class Main {
         }
 
         this.plants.forEach(
-            (plant) => {
+            plant => {
                 context.fillText(plant, textMargin, y + 17)
                 context.rotate(-Math.PI/2)
                 context.fillText(plant, textMargin - textArea, y + 15)
