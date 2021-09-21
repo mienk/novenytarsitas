@@ -1,4 +1,5 @@
 import PlantsAssociation from '/src/PlantsAssociation.js'
+import PlantsAssociation2 from '/src/PlantsAssociation2.js'
 
 export default class Main {
 
@@ -8,7 +9,8 @@ export default class Main {
         this.draw()
         this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
         //example:
-        console.log(this.compatibility("paradicsom", "paprika"))
+        //console.log(this.compatibility("paradicsom", "paprika"))
+        new PlantsAssociation2()
     }
 
     draw = () => {

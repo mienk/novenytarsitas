@@ -1,10 +1,6 @@
 export default class PlantsAssociation2 {
 
-    #plantsMatrix2 = {
-        NÖVÉNY: {
-            JÓ_SZOMSZÉD: [],
-            ROSSZ_SZOMSZÉD: []
-        },
+    #plantsMatrix2 = {//Noll Erika
         BOKORBAB: {
             JÓ_SZOMSZÉD: ["eper", "uborka", "tök", "burgonya", "karfiol", "káposztafélék", "retek", "karalábé", "saláták", "zeller",
                 "paradicsom", "cékla", "sárgarépa", "spenót", "padlizsán", "cukkíni", "kukorica", "napraforgó", "mángold", "paprika",
@@ -26,7 +22,7 @@ export default class PlantsAssociation2 {
                 "kamilla", "borsmenta", "rozmaring", "len", "ánizs", "koriander", "csalán", "kömény", "sarkantyúka", "büdöske", "petúnia",
                 "körömvirág"],
             ROSSZ_SZOMSZÉD: ["borsó", "cékla", "zeller", "körtefa", "napraforgó", "tök", "paradicsom", "uborka", "hagyma", "padlizsán",
-                "diófa", "patiszon", "csemegekukorica", "málna", "almafa", "őszi és sárgabarack fa"]
+                "diófa", "patiszon", "csemegekukorica", "málna", "almafa", "őszibarack fa", "sárgabarack fa"]
         },
         CÉKLA: {
             JÓ_SZOMSZÉD: ["bokorbab", "kapor", "uborka", "fokhagyma", "káposztafélék", "zeller", "karalábé", "tépősaláta",
@@ -39,31 +35,31 @@ export default class PlantsAssociation2 {
             ROSSZ_SZOMSZÉD: ["paradicsom"]
         },
         FEJES_SALÁTA: {
-            JÓ_SZOMSZÉD: ["futóbab", "eper", "uborka", "káposztafélék", "tök", "karalábé", "borsó", "póréhagyma", "retek", "sárgarépa", "cékla", "paradicsom", "hagyma", "mángold", "cukorrépa", "mogyoróhagyma", "fehérrépa", "karfiol", "fokhagyma", "patiszon", "burgonya", "kelbimbó", "bokorbab", "articsóka", "metélőhagyma", "kelkáposzta", "káposzta", "brokkoli", "édes kömény", "fekete gyökér", "rozmaring", "turbolya", "zsálya", "borsmenta", "kapor", "büdöske (bársonyvirág)"],
+            JÓ_SZOMSZÉD: ["futóbab", "eper", "uborka", "káposztafélék", "tök", "karalábé", "borsó", "póréhagyma", "retek", "sárgarépa", "cékla", "paradicsom", "hagyma", "mángold", "cukorrépa", "mogyoróhagyma", "fehérrépa", "karfiol", "fokhagyma", "patiszon", "burgonya", "kelbimbó", "bokorbab", "articsóka", "metélőhagyma", "kelkáposzta", "káposzta", "brokkoli", "édeskömény", "fekete gyökér", "rozmaring", "turbolya", "zsálya", "borsmenta", "kapor", "büdöske"],
             ROSSZ_SZOMSZÉD: ["petrezselyem", "zeller", "lóbab", "napraforgó", "kukorica"]
         },
         FOKHAGYMA: {
-            JÓ_SZOMSZÉD: ["eper", "uborka", "cékla", "sárgarépa", "paradicsom", "burgonya", "zeller", "padlizsán", "retek", "kelbimbó", "brokkoli", "saláta", "cukorrépa", "karfiol", "paprika", "kínai káposzta", "kelkáposzta", "rozmaring", "kamilla", "liliom", "tulipán", "rózsa", "málna", "szőlő", "gyümölcsfák (körtefa", "almafa", "őszbarack fa", "sárgabarack fa)"],
+            JÓ_SZOMSZÉD: ["eper", "uborka", "cékla", "sárgarépa", "paradicsom", "burgonya", "zeller", "padlizsán", "retek", "kelbimbó", "brokkoli", "saláta", "cukorrépa", "karfiol", "paprika", "kínai káposzta", "kelkáposzta", "rozmaring", "kamilla", "liliom", "tulipán", "rózsa", "málna", "szőlő", "gyümölcsfák (körtefa", "almafa", "őszibarack fa", "sárgabarack fa)"],
             ROSSZ_SZOMSZÉD: ["borsó", "káposztafélék", "karósbab", "futóbab", "spárga", "bokorbab", "leveles kel", "fehérrépa", "káposzta"]
         },
         HAGYMA: {
-            JÓ_SZOMSZÉD: ["eper", "uborka", "fejes saláta", "sárgarépa", "cékla", "paradicsom", "paprika", "mángold", "cukkíni", "spenót", "tök", "kelkáposzta", "zeller", "póréhagyma", "brokkoli", "karotta", "karfiol", "kelbimbó", "pasztinák", "cukorrépa", "kapor", "édeskömény", "kamilla", "borsikafű (csombor)", "bazsalikom", "majoránna", "petrezselyem", "rózsa"],
-            ROSSZ_SZOMSZÉD: ["bokorbab", "káposztafélék", "leveles kel", "burgonya", "káposzta", "spárga", "retek", "karalábé", "borsó futóbab", "kerti ruta", "zsálya"]
+            JÓ_SZOMSZÉD: ["eper", "uborka", "fejes saláta", "sárgarépa", "cékla", "paradicsom", "paprika", "mángold", "cukkíni", "spenót", "tök", "kelkáposzta", "zeller", "póréhagyma", "brokkoli", "karotta", "karfiol", "kelbimbó", "pasztinák", "cukorrépa", "kapor", "édeskömény", "kamilla", "borsikafű csombor", "bazsalikom", "majoránna", "petrezselyem", "rózsa"],
+            ROSSZ_SZOMSZÉD: ["bokorbab", "káposztafélék", "leveles kel", "burgonya", "káposzta", "spárga", "retek", "karalábé", "borsó", "futóbab", "kerti ruta", "zsálya"]
         },
         HÓNAPOS_RETEK: {
             JÓ_SZOMSZÉD: ["bokorbab", "borsó", "karalábé", "fejes saláta", "mángold", "sárgarépa", "spenót", "paradicsom", "fokhagyma", "futóbab", "paszternák", "eper", "tök", "cukorrépa", "zeller", "brokkoli", "karfiol", "dinnye", "póréhagyma", "fekete gyökér", "menta", "kerti zsázsa", "turbolya", "zsálya", "petrezselyem", "sarkantyúvirág", "szőlő"],
             ROSSZ_SZOMSZÉD: ["uborka", "hagyma", "patiszon", "káposzta", "kelkáposzta", "izsóp"]
         },
         KÁPOSZTA_FÉLÉK: {
-            JÓ_SZOMSZÉD: ["bokorbab", "endívia", "borsó", "burgonya", "saláta", "mángold", "tök", "cékla", "zeller", "spenót", "paradicsom", "dinnye", "sárgarépa", "uborka", "brokkoli", "cukkíni", "futóbab", "rebarbara", "kapor", "üröm", "borágó", "kamilla", "kakukkfű", "zsálya", "bazsalikom", "menta", "koriander", "rozmaring", "borsikafű (csombor)", "sarkantyúvirág", "cickafark"],
+            JÓ_SZOMSZÉD: ["bokorbab", "endívia", "borsó", "burgonya", "saláta", "mángold", "tök", "cékla", "zeller", "spenót", "paradicsom", "dinnye", "sárgarépa", "uborka", "brokkoli", "cukkíni", "futóbab", "rebarbara", "kapor", "üröm", "borágó", "kamilla", "kakukkfű", "zsálya", "bazsalikom", "menta", "koriander", "rozmaring", "borsikafű csombor", "sarkantyúvirág", "cickafark"],
             ROSSZ_SZOMSZÉD: ["eper", "mustár", "fokhagyma", "hagyma", "petrezselyem"]
         },
         KARALÁBÉ: {
             JÓ_SZOMSZÉD: ["bokorbab", "borsó", "burgonya", "retek", "cékla", "fejes saláta", "zeller", "spenót", "póréhagyma", "borágó", "bazsalikom", "rozmaring"],
-            ROSSZ_SZOMSZÉD: ["paprika", "paradicsom", "hagyma", "futóbab", "édes kömény"]
+            ROSSZ_SZOMSZÉD: ["paprika", "paradicsom", "hagyma", "futóbab", "édeskömény"]
         },
         KUKORICA: {
-            JÓ_SZOMSZÉD: ["bokorbab", "uborka", "burgonya", "sütőtök dinnye", "paradicsom", "cukkíni", "patiszon", "napraforgó", "borsó", "futóbab", "spenót", "tök", "kapor", "muskátli", "facélia"],
+            JÓ_SZOMSZÉD: ["bokorbab", "uborka", "burgonya", "sütőtök", "dinnye", "paradicsom", "cukkíni", "patiszon", "napraforgó", "borsó", "futóbab", "spenót", "tök", "kapor", "muskátli", "facélia"],
             ROSSZ_SZOMSZÉD: ["cékla", "zeller", "saláta", "sárgarépa", "menta", "rozmaring"]
         },
         NAPRAFORGÓ: {
@@ -72,18 +68,18 @@ export default class PlantsAssociation2 {
         },
         PARADICSOM: {
             JÓ_SZOMSZÉD: ["zeller", "fokhagyma", "bokorbab", "padlizsán", "póréhagyma", "retek", "káposztafélék", "spenót", "hagyma", "fejes saláta", "sárgarépa", "paprika", "metélőhagyma", "spárga", "kelkáposzta", "brokkoli", "tépősaláta", "zsálya", "bazsalikom", "borágó", "menta", "citromfű", "rozmaring", "csalán", "petrezselyem", "büdöske", "petúnia", "sarkantyúvirág", "körömvirág", "rézvirág"],
-            ROSSZ_SZOMSZÉD: ["borsó", "burgonya", "cukorrépa", "uborka", "futóbab", "cékla", "cukkíni", "karfiol", "kelbimbó", "karalábé", "kapor", "kömény", "édeskömény", "diófa", "őszi és sárgabarack fa"]
+            ROSSZ_SZOMSZÉD: ["borsó", "burgonya", "cukorrépa", "uborka", "futóbab", "cékla", "cukkíni", "karfiol", "kelbimbó", "karalábé", "kapor", "kömény", "édeskömény", "diófa", "őszibarack fa", "sárgabarack fa"]
         },
         PÓRÉHAGYMA: {
-            JÓ_SZOMSZÉD: ["eper", "hagyma", "retek karalábé", "fejes saláta", "sárgarépa", "zeller", "paradicsom", "spárga", "spenót", "endívia", "burgonya", "fekete gyökér", "kamilla", "petrezselyem", "édes kömény"],
+            JÓ_SZOMSZÉD: ["eper", "hagyma", "retek", "karalábé", "fejes saláta", "sárgarépa", "zeller", "paradicsom", "spárga", "spenót", "endívia", "burgonya", "fekete gyökér", "kamilla", "petrezselyem", "édeskömény"],
             ROSSZ_SZOMSZÉD: ["bokorbab", "borsó", "cékla", "káposzta"]
         },
         SÁRGARÉPA: {
-            JÓ_SZOMSZÉD: ["borsó", "retek", "spárga fokhagyma", "mángold", "póréhagyma", "uborka", "metélőhagyma", "saláta", "paprika", "mogyoróhagyma", "paradicsom", "hagymák", "bokorbab káposztafélék", "bokorbab", "rozmaring", "zsálya", "menta", "turbolya", "petrezselyem", "kapor"],
+            JÓ_SZOMSZÉD: ["borsó", "retek", "spárga", "fokhagyma", "mángold", "póréhagyma", "uborka", "metélőhagyma", "saláta", "paprika", "mogyoróhagyma", "paradicsom", "hagymák", "bokorbab", "káposztafélék", "bokorbab", "rozmaring", "zsálya", "menta", "turbolya", "petrezselyem", "kapor"],
             ROSSZ_SZOMSZÉD: ["cékla", "cukorrépa", "zeller", "kukorica", "csemegekukorica", "kömény", "ánizs", "kapor"]
         },
         SPENÓT: {
-            JÓ_SZOMSZÉD: ["eper", "burgonya", "zeller káposztafélék", "borsó", "karalábé", "retek", "karósbab", "padlizsán paradicsom", "hagyma", "póréhagyma", "karfiol", "bokorbab", "kukorica", "csemegekukorica", "káposzta"],
+            JÓ_SZOMSZÉD: ["eper", "burgonya", "zeller", "káposztafélék", "borsó", "karalábé", "retek", "karósbab", "padlizsán paradicsom", "hagyma", "póréhagyma", "karfiol", "bokorbab", "kukorica", "csemegekukorica", "káposzta"],
             ROSSZ_SZOMSZÉD: ["cukorrépa", "cékla"]
         },
         PATISZON: {
@@ -98,7 +94,7 @@ export default class PlantsAssociation2 {
             JÓ_SZOMSZÉD: ["burgonya", "gyümölcsfák (körtefa", "almafa", "diófa", "őszibarack fa", "sárgabarack fa)"]
         },
         UBORKA: {
-            JÓ_SZOMSZÉD: ["káposztafélék", "cékla", "napraforgó", "zeller", "bokorbab", "saláta", "kukorica", "hagyma", "sárgarépa", "borsó", "brokkoli", "karfiol", "leveles kel", "futóbab", "fokhagyma", "metélőhagyma", "csemegekukorica", "káposzta", "kapor", "bazsalikom", "koriander", "borsikafű (csombor)", "édeskömény", "kömény", "rozmaring", "büdöske", "sarkantyúvirág", "petúnia"],
+            JÓ_SZOMSZÉD: ["káposztafélék", "cékla", "napraforgó", "zeller", "bokorbab", "saláta", "kukorica", "hagyma", "sárgarépa", "borsó", "brokkoli", "karfiol", "leveles kel", "futóbab", "fokhagyma", "metélőhagyma", "csemegekukorica", "káposzta", "kapor", "bazsalikom", "koriander", "borsikafű csombor", "édeskömény", "kömény", "rozmaring", "büdöske", "sarkantyúvirág", "petúnia"],
             ROSSZ_SZOMSZÉD: ["paradicsom", "burgonya", "dinnye", "retek", "zsálya", "izsóp"]
         },
         ZELLER: {
@@ -146,7 +142,7 @@ export default class PlantsAssociation2 {
             ROSSZ_SZOMSZÉD: ["paradicsom", "borsó", "kerti ruta", "szőlő", "eper"]
         },
         METÉLŐHAGYMA: {
-            JÓ_SZOMSZÉD: ["sárgarépa", "eper", "uborka", "paradicsom", "saláta", "cikória", "kamilla", "kapor", "borsikafű (csombor)", "ánizs", "bazsalikom", "rózsa", "szőlő", "almafa"],
+            JÓ_SZOMSZÉD: ["sárgarépa", "eper", "uborka", "paradicsom", "saláta", "cikória", "kamilla", "kapor", "borsikafű csombor", "ánizs", "bazsalikom", "rózsa", "szőlő", "almafa"],
             ROSSZ_SZOMSZÉD: ["bokorbab", "borsó"]
         },
         PETREZSELYEM: {
@@ -170,24 +166,21 @@ export default class PlantsAssociation2 {
             ROSSZ_SZOMSZÉD: ["szőlő"]
         },
         KÖMÉNY: {
-            JÓ_SZOMSZÉD: ["cékla", "uborka", "édeskömény", "A felsorolt ROSSZ_SZOMSZÉDokon kívül", "gyakorlatilag bárhová lehet vetni", "ültetni!!"],
+            JÓ_SZOMSZÉD: ["cékla", "uborka", "édeskömény"],
             ROSSZ_SZOMSZÉD: ["paradicsom", "sárgarépa", "kapor"]
         },
         MÁNGOLD: {
-            JÓ_SZOMSZÉD: ["hagyma", "bokorbab", "káposztafélék", "retek", "sárgarépa", "saláta", "káposzta", "cickafark"],
-            ROSSZ_SZOMSZÉD: ["Nem ismert"]
+            JÓ_SZOMSZÉD: ["hagyma", "bokorbab", "káposztafélék", "retek", "sárgarépa", "saláta", "káposzta", "cickafark"]
         },
         TÉPŐSALÁTA: {
-            JÓ_SZOMSZÉD: ["paradicsom", "cékla"],
-            ROSSZ_SZOMSZÉD: ["Nem ismert"]
+            JÓ_SZOMSZÉD: ["paradicsom", "cékla"]
         },
         PASZTINÁK: {
             JÓ_SZOMSZÉD: ["retek", "hagyma", "lóbab", "kamilla"],
             ROSSZ_SZOMSZÉD: ["kapor"]
         },
         ENDIVIA: {
-            JÓ_SZOMSZÉD: ["káposztafélék", "futóbab", "póréhagyma", "édes kömény"],
-            ROSSZ_SZOMSZÉD: ["Nem ismert"]
+            JÓ_SZOMSZÉD: ["káposztafélék", "futóbab", "póréhagyma", "édeskömény"]
         },
         CSEMEGEKUKORICA: {
             JÓ_SZOMSZÉD: ["uborka", "borsó", "futóbab", "bokorbab", "spenót", "tök", "cukkíni", "patiszon", "napraforgó", "dinnye", "facélia", "kapor", "muskátli"],
@@ -209,7 +202,7 @@ export default class PlantsAssociation2 {
             ROSSZ_SZOMSZÉD: ["kerti ruta", "rozmaring", "kamilla", "ánizs"]
         },
         BORÁGÓ: {
-            JÓ_SZOMSZÉD: ["bokorbab", "káposztafélék", "cukkíni", "tök", "eper", "paradicsom", "káposzta", "karalábé", "futóbab", "cickafarok"]
+            JÓ_SZOMSZÉD: ["bokorbab", "káposztafélék", "cukkíni", "tök", "eper", "paradicsom", "káposzta", "karalábé", "futóbab", "cickafark"]
         },
         MENTA: {
             JÓ_SZOMSZÉD: ["futóbab", "káposzta", "fehérrépa", "kelbimbó", "padlizsán", "brokkoli", "bokorbab", "borsó", "burgonya", "saláta", "retek", "káposztafélék", "sárgarépa", "tök", "kínai káposzta", "leveles kel karfiol", "paradicsom", "gyümölcsfák"],
@@ -220,10 +213,10 @@ export default class PlantsAssociation2 {
             ROSSZ_SZOMSZÉD: ["retek", "uborka"]
         },
         ROZMARING: {
-            JÓ_SZOMSZÉD: ["bab", "fokhagyma", "tök", "káposztafélék", "saláta uborka", "karalábé", "sárgarépa", "petrezselyem", "fehérrépa", "kelbimbó", "káposzta", "kelkáposzta", "brokkoli", "kínai káposzta", "futóbab", "bokorbab", "borsó", "burgonya", "paradicsom", "karfiol", "cickafark"],
+            JÓ_SZOMSZÉD: ["bab", "fokhagyma", "tök", "káposztafélék", "saláta", "uborka", "karalábé", "sárgarépa", "petrezselyem", "fehérrépa", "kelbimbó", "káposzta", "kelkáposzta", "brokkoli", "kínai káposzta", "futóbab", "bokorbab", "borsó", "burgonya", "paradicsom", "karfiol", "cickafark"],
             ROSSZ_SZOMSZÉD: ["bazsalikom", "kukorica", "csemegekukorica"]
         },
-        CSOMBOR_borsikafű: {
+        BORSIKAFŰ_csombor: {
             JÓ_SZOMSZÉD: ["bokorbab", "futóbab", "kínai káposzta", "hagyma", "káposztafélék", "uborka", "metélőhagyma"]
         },
         ZSÁLYA: {
@@ -256,7 +249,7 @@ export default class PlantsAssociation2 {
         },
         KAPOR: {
             JÓ_SZOMSZÉD: ["cékla", "metélőhagyma", "brokkoli", "kelbimbó", "káposzta", "kelkáposzta", "kínai káposzta", "borsó", "uborka", "saláta", "hagyma", "káposztafélék", "kukorica", "sárgarépa", "karfiol"],
-            ROSSZ_SZOMSZÉD: ["paradicsom", "kömény", "pasztinák", "édes kömény"]
+            ROSSZ_SZOMSZÉD: ["paradicsom", "kömény", "pasztinák", "édeskömény"]
         },
         CSICSÓKA: {
             JÓ_SZOMSZÉD: ["burgonya"]
@@ -274,7 +267,7 @@ export default class PlantsAssociation2 {
         },
         KORIANDER: {
             JÓ_SZOMSZÉD: ["burgonya", "cékla", "káposztafélék", "uborka"],
-            ROSSZ_SZOMSZÉD: ["édes kömény"]
+            ROSSZ_SZOMSZÉD: ["édeskömény"]
         },
         LEN: {
             JÓ_SZOMSZÉD: ["burgonya"]
@@ -334,16 +327,42 @@ export default class PlantsAssociation2 {
             JÓ_SZOMSZÉD: ["paprika", "bazsalikom"]
         }
     }
-/*
-Megjegyzések:
-CUKKINI: A cukkíni lehet másodvetés is, de semmiképpen se vessük: retek, saláta és dughagyma után!
-FEJES SALÁTA: Vetésforgóban használható, de ne kerüljön gyökérzöldégek helyére!!
-PATISZON: Másodvetésre is használható, a legjobb a saláta, dughagyma vagy retek után!!
-UBORKA: Másodvetésben is használható, retek, burgonya és saláta ágyások után a legkiválóbb!!
-TÖK: Másodvetésre is használható retek, dughagyma és saláta után!!
-*/
+
+    #plantsMatrix22 = {}
+
+    /*
+    Megjegyzések:
+    CUKKINI: A cukkíni lehet másodvetés is, de semmiképpen se vessük: retek, saláta és dughagyma után!
+    FEJES SALÁTA: Vetésforgóban használható, de ne kerüljön gyökérzöldégek helyére!!
+    KÖMÉNY: A felsorolt ROSSZ szomszédokon kívül, gyakorlatilag bárhová lehet vetni, ültetni!!
+    PATISZON: Másodvetésre is használható, a legjobb a saláta, dughagyma vagy retek után!!
+    TÖK: Másodvetésre is használható retek, dughagyma és saláta után!!
+    UBORKA: Másodvetésben is használható, retek, burgonya és saláta ágyások után a legkiválóbb!!
+    */
 
     #colors = {
         "x": "maroon", "f": "white", "p": "red", "z": "green", "g": "gray"
+    }
+
+    #plantNames = []
+    #plantNamesSorted
+
+    constructor() {
+        for (const [key, value] of Object.entries(this.#plantsMatrix2)) {
+            this.#plantNames.push(key.toLowerCase().replace(/_/g, " "))
+            for (const [key2, value2] of Object.entries(value)) {
+                value2.forEach(n =>
+                    this.#plantNames.push(n)
+                )
+            }
+        }
+        this.#plantNames = this.#plantNames.sort()
+        this.#plantNamesSorted = new Set(this.#plantNames)
+        this.#plantNamesSorted.forEach(item =>
+            this.#plantsMatrix22[item] = []
+        )
+        for (const [key, value] of Object.entries(this.#plantsMatrix22)) {
+            console.log(key, value)
+        }
     }
 }

@@ -1,6 +1,6 @@
 export default class PlantsAssociation {
 
-    #plantsMatrix = {
+    #plantsMatrix = {//Székely Gyöngyvér
         "paradicsom":
             "xzzzppzzzzzzzfffpfppfzzfzfzfzfpffpzfpf",
         "paprika":
