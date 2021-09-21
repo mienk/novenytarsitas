@@ -1,5 +1,3 @@
 # garden
 # Plant association
-https://kert.netlify.app
-
-(kert == garden in Hungarian language)
+https://novenytarsitas.netlify.app/
