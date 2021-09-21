@@ -83,8 +83,8 @@ export default class PlantsAssociation {
         "x": "maroon", "f": "white", "p": "red", "z": "green", "g": "gray"
     }
 
-    getPlantsMatrixLength = () => Object.keys(this.#plantsMatrix).length
     getPlants = () => Object.keys(this.#plantsMatrix)
+    getPlantsMatrixLength = () => this.getPlants().length
     getRow = plantName => this.#plantsMatrix[plantName]
     getColor = i => this.#colors[i]
     getCompatibility = (plant1, plant2) =>
