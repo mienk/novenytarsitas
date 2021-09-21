@@ -87,4 +87,12 @@ export default class PlantsAssociation {
     getPlants = () => Object.keys(this.#plantsMatrix)
     getRow = (plantName) => this.#plantsMatrix[plantName]
     getColor = (i) => this.#colors[i]
+    getCompatibility = (plant1, plant2) =>
+        this.getColor( // 5. a plant2 indexének birtokában megkeressük a jelhez tartozó szín nevét
+            this.getRow(plant1) // 1. kikeressük a plant1-hez tartozó sort, ami egy tömb (array)
+            [ // 2. ide várjunk a tömb egy indexét, amivel kiválasztjuk az összeférhetőség (kompatibilitás) jelét (x, f, p, z),
+            this.getPlants() // 3. ehhez lekérdezzük, milyen növények vannak, ezek közül kikeressük...
+                .indexOf(plant2) // 4. ... a plant2 indexét
+            ]
+        )
 }

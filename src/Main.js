@@ -6,6 +6,9 @@ export default class Main {
         this.plantsAssociation = new PlantsAssociation()
         this.plants = this.plantsAssociation.getPlants()
         this.draw()
+        this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
+        //example:
+        console.log(this.compatibility("paradicsom", "paprika"))
     }
 
     draw = () => {
@@ -40,7 +43,7 @@ export default class Main {
                 context.fillText(plant, textMargin - textArea, y + 15)
                 context.rotate(Math.PI/2)
                 this.plantsAssociation.getRow(plant).split('').forEach(
-                    (colorSign) => {
+                    colorSign => {
                         square(x, y, this.plantsAssociation.getColor(colorSign))
                         x += lineSpacing
                     }
