@@ -5,15 +5,15 @@ export default class Main {
 
     constructor() {
         this.plantsAssociation1 = new PlantsAssociation1()
-        this.plants = this.plantsAssociation1.getPlants()
-        this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
+        this.plantsAssociation2 = new PlantsAssociation2()
+        this.draw(this.plantsAssociation2)
+        //this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
         //example:
         //console.log(this.compatibility("paradicsom", "paprika"))
-        this.plantsAssociation2 = new PlantsAssociation2()
-        this.draw(this.plantsAssociation1)
     }
 
     draw = (plantsAssociation) => {
+        let plants = plantsAssociation.getPlants()
         let textArea = 130
         let x = textArea
         let y = textArea
@@ -38,12 +38,13 @@ export default class Main {
             context.fillStyle = "black"
         }
 
-        this.plants.forEach(
+        plants.forEach(
             plant => {
                 context.fillText(plant, textMargin, y + 17)
                 context.rotate(-Math.PI/2)
                 context.fillText(plant, textMargin - textArea, y + 15)
                 context.rotate(Math.PI/2)
+                console.log(plantsAssociation.getRow(plant))
                 plantsAssociation.getRow(plant).split('').forEach(
                     colorSign => {
                         square(x, y, plantsAssociation.getColor(colorSign))

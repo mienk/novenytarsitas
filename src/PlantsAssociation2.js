@@ -472,34 +472,45 @@ export default class PlantsAssociation2 {
         this.#plantNamesSorted.forEach(item =>
             this.#plantsMatrix22[item] = []
         )
-        this.#plantNamesSorted.forEach(
-            item => console.log(item)
-        )
+        // this.#plantNamesSorted.forEach(
+        //     item => console.log(item)
+        // )
         this.#plantNamesSorted.forEach(
             n => {
+                let rowArray = []
                 this.#plantNamesSorted.forEach(
                     m => {
                         if (n == m)
-                            console.log(n, m, "x")
+                            //console.log(n, m, "x")
+                            rowArray.push("x")
                         else if (
                             this.#plantsMatrix2[n.toUpperCase().replace(/ /g, "_")]
                             ["JÓ_SZOMSZÉD"].includes(m)
                         )
-                            console.log(n, m, "z")
+                            //console.log(n, m, "z")
+                            rowArray.push("z")
                         else if (
                             this.#plantsMatrix2[n.toUpperCase().replace(/ /g, "_")]
                             ["ROSSZ_SZOMSZÉD"].includes(m)
                         )
-                            console.log(n, m, "p")
-                        else console.log(n, m, "s")
+                            //console.log(n, m, "p")
+                            rowArray.push("p")
+                        else
+                            //console.log(n, m, "s")
+                            rowArray.push("s")
                     }
                 )
+                this.#plantsMatrix22[n] = rowArray.join("")
             }
         )
     }
-}
+    getPlants = () => Array.from(this.#plantNamesSorted)
+    getPlantsMatrixLength = () => this.getPlants().length
+    getRow = plantName => this.#plantsMatrix22[plantName]
+    getColor = i => this.#colors[i]
+    getCompatibility = (plant1, plant2) =>
+        this.getColor(
+            this.getRow(plant1)[this.getPlants().indexOf(plant2)]
+        )
 
-// BÜDÖSKE: {
-//     JÓ_SZOMSZÉD: [],
-//     ROSSZ_SZOMSZÉD: []
-// },
+}
