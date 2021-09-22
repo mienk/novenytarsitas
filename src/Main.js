@@ -1,10 +1,10 @@
-import PlantsAssociation from '/src/PlantsAssociation.js'
+import PlantsAssociation1 from '/src/PlantsAssociation1.js'
 import PlantsAssociation2 from '/src/PlantsAssociation2.js'
 
 export default class Main {
 
     constructor() {
-        this.plantsAssociation = new PlantsAssociation()
+        this.plantsAssociation = new PlantsAssociation1()
         this.plants = this.plantsAssociation.getPlants()
         this.draw()
         this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
