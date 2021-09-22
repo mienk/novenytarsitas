@@ -6,7 +6,7 @@ export default class Main {
     constructor() {
         this.plantsAssociation1 = new PlantsAssociation1()
         this.plantsAssociation2 = new PlantsAssociation2()
-        this.draw(this.plantsAssociation2)
+        this.draw(this.plantsAssociation1)
         //this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
         //example:
         //console.log(this.compatibility("paradicsom", "paprika"))
@@ -14,7 +14,7 @@ export default class Main {
 
     draw = (plantsAssociation) => {
         let plants = plantsAssociation.getPlants()
-        let textArea = 130
+        let textArea = 140
         let x = textArea
         let y = textArea
         let textMargin = 10
