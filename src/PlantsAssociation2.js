@@ -498,3 +498,8 @@ export default class PlantsAssociation2 {
         )
     }
 }
+
+// BÜDÖSKE: {
+//     JÓ_SZOMSZÉD: [],
+//     ROSSZ_SZOMSZÉD: []
+// },

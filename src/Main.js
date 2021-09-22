@@ -4,16 +4,16 @@ import PlantsAssociation2 from '/src/PlantsAssociation2.js'
 export default class Main {
 
     constructor() {
-        this.plantsAssociation = new PlantsAssociation1()
-        this.plants = this.plantsAssociation.getPlants()
-        this.draw()
+        this.plantsAssociation1 = new PlantsAssociation1()
+        this.plants = this.plantsAssociation1.getPlants()
         this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
         //example:
         //console.log(this.compatibility("paradicsom", "paprika"))
-        new PlantsAssociation2()
+        this.plantsAssociation2 = new PlantsAssociation2()
+        this.draw(this.plantsAssociation1)
     }
 
-    draw = () => {
+    draw = (plantsAssociation) => {
         let textArea = 130
         let x = textArea
         let y = textArea
@@ -24,7 +24,7 @@ export default class Main {
         let matrixDraw = document.getElementsByTagName("canvas")[0]
         window.context = matrixDraw.getContext("2d")
         context.strokeStyle = "black"
-        matrixDraw.width = textArea + textMargin + this.plantsAssociation.getPlantsMatrixLength() * lineSpacing
+        matrixDraw.width = textArea + textMargin + plantsAssociation.getPlantsMatrixLength() * lineSpacing
         matrixDraw.height = matrixDraw.width
         context.fillStyle = "#f0f0f0"
         context.fillRect(0, 0, matrixDraw.width, matrixDraw.height)
@@ -44,9 +44,9 @@ export default class Main {
                 context.rotate(-Math.PI/2)
                 context.fillText(plant, textMargin - textArea, y + 15)
                 context.rotate(Math.PI/2)
-                this.plantsAssociation.getRow(plant).split('').forEach(
+                plantsAssociation.getRow(plant).split('').forEach(
                     colorSign => {
-                        square(x, y, this.plantsAssociation.getColor(colorSign))
+                        square(x, y, plantsAssociation.getColor(colorSign))
                         x += lineSpacing
                     }
                 )
