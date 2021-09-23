@@ -9,8 +9,9 @@ export default class Main {
                 this.reload()
             }
         }
-        this.plantsAssociation1 = new PlantsAssociation1()
-        this.plantsAssociation2 = new PlantsAssociation2()
+        this.plantsAssociation = []
+        this.plantsAssociation[1] = new PlantsAssociation1()
+        this.plantsAssociation[2] = new PlantsAssociation2()
         this.select()
         //this.draw(this.plantsAssociation1)
         //this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
@@ -35,19 +36,10 @@ export default class Main {
         let tables = document.querySelectorAll('input[name="tables"]')
         for (const table of tables) {
             table.addEventListener("change", (event) => {
-
                 let selectedTable = table.value
-                //console.log(selectedTable)
-                if(table.value == 1) {
-                    menu.style.display = "none"
-                    canvas.style.display = "block"
-                    this.draw(this.plantsAssociation1)
-                }
-                if(table.value == 2) {
-                    menu.style.display = "none"
-                    canvas.style.display = "block"
-                    this.draw(this.plantsAssociation2)
-                }
+                menu.style.display = "none"
+                canvas.style.display = "block"
+                this.draw(this.plantsAssociation[selectedTable])
             })
         }
     }
@@ -87,7 +79,7 @@ export default class Main {
 
         let delta = window.innerWidth - matrixDraw.width
         let container = document.getElementsByClassName("container")[0]
-        if( delta > 0) 
+        if (delta > 0)
             container.style.flexDirection = "column"
 
         let square = (x, y, color) => {
