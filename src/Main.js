@@ -4,12 +4,66 @@ import PlantsAssociation2 from '/src/PlantsAssociation2.js'
 export default class Main {
 
     constructor() {
+        document.onkeydown = e => {
+            if (e.key === "Escape") {
+                this.reload()
+            }
+        }
         this.plantsAssociation1 = new PlantsAssociation1()
         this.plantsAssociation2 = new PlantsAssociation2()
-        this.draw(this.plantsAssociation1)
+        this.select()
+        //this.draw(this.plantsAssociation1)
         //this.compatibility = (plant1, plant2) => this.plantsAssociation.getCompatibility(plant1, plant2)
         //example:
         //console.log(this.compatibility("paradicsom", "paprika"))
+    }
+
+    reload = () => {
+        fetch('', {
+            'Cache-Control': 'no-cache'
+        })
+            .then(() => location.reload())
+            .catch(error => console.warn(error))
+    }
+
+    select = () => {
+        let canvas = document.getElementsByTagName('canvas')[0]
+        canvas.style.display = "none"
+        let menu = document.getElementById("menu")
+        this.insertForm(menu, "Válassz táblázatot: (Esc gomb = vissza ehhez a menühöz)", "tables", 1, 2)
+
+        let tables = document.querySelectorAll('input[name="tables"]')
+        for (const table of tables) {
+            table.addEventListener("change", (event) => {
+
+                let selectedTable = table.value
+                //console.log(selectedTable)
+                if(table.value == 1) {
+                    menu.style.display = "none"
+                    canvas.style.display = "block"
+                    this.draw(this.plantsAssociation1)
+                }
+                if(table.value == 2) {
+                    menu.style.display = "none"
+                    canvas.style.display = "block"
+                    this.draw(this.plantsAssociation2)
+                }
+            })
+        }
+    }
+
+    insertForm = (sect, title, name, min, max) => {
+        sect.innerHTML += "<p><b>" + title + "</b></p>"
+        for (let i = min; i <= max; i++) {
+            let input = document.createElement('input')
+            sect.append(input)
+            input.type = "radio"
+            input.name = name
+            input.value = i
+            let label = document.createElement("label")
+            label.textContent = i + " "
+            sect.append(label)
+        }
     }
 
     draw = (plantsAssociation) => {
@@ -41,9 +95,9 @@ export default class Main {
         plants.forEach(
             plant => {
                 context.fillText(plant, textMargin, y + 17)
-                context.rotate(-Math.PI/2)
+                context.rotate(-Math.PI / 2)
                 context.fillText(plant, textMargin - textArea, y + 15)
-                context.rotate(Math.PI/2)
+                context.rotate(Math.PI / 2)
                 console.log(plantsAssociation.getRow(plant))
                 plantsAssociation.getRow(plant).split('').forEach(
                     colorSign => {
