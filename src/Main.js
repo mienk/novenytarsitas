@@ -85,6 +85,11 @@ export default class Main {
         context.font = '16px Arial'
         context.fillStyle = 'black'
 
+        let delta = window.innerWidth - matrixDraw.width
+        let container = document.getElementsByClassName("container")[0]
+        if( delta > 0) 
+            container.style.flexDirection = "column"
+
         let square = (x, y, color) => {
             context.strokeRect(x, y, edge, edge)
             context.fillStyle = color
