@@ -30,7 +30,7 @@ export default class Main {
         let canvas = document.getElementsByTagName('canvas')[0]
         canvas.style.display = "none"
         let menu = document.getElementById("menu")
-        this.insertForm(menu, "Válassz táblázatot: (Esc gomb = vissza ehhez a menühöz)", "tables", 1, 2)
+        this.insertForm(menu, "Válassz táblázatot: (Esc = vissza ide)", "tables", 1, 2)
 
         let tables = document.querySelectorAll('input[name="tables"]')
         for (const table of tables) {
