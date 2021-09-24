@@ -1,5 +1,5 @@
-import PlantsAssociation1 from '/src/PlantsAssociation1.js'
-import PlantsAssociation2 from '/src/PlantsAssociation2.js'
+import PlantsAssociation1 from './PlantsAssociation1.js'
+import PlantsAssociation2 from './PlantsAssociation2.js'
 
 export default class Main {
 
